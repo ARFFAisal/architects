@@ -26,7 +26,6 @@
     margin-bottom: 85px;
 }
 main{
-    margin-bottom: 130px;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -84,7 +83,10 @@ main{
     align-items: center;
     max-width: 1318px;
     margin: 0 auto;
+    margin-bottom: 130px;
 }
+
+
 
 .features-img-container{
     display: grid;
@@ -103,6 +105,49 @@ main{
   .features-color{
     color: #ff900e;
   }
+
+  /* love features section */
+  .love-features{
+    gap: 140px
+  }
+  h3 h4{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #features-section-title{
+    border-left: 5px solid #ff900e;
+    padding-left: 20px;
+  }
+
+  .feature-card{
+    padding: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  .feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+
+    
+  }
+  .featured-architect img{
+    width: 100%;
+  }
+  #experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+  #experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+
+  }
+
   /* some fact related styles */
  
   .facts-container{
@@ -134,6 +179,7 @@ main{
     font-weight: 600;
     margin-top: 10px;
   }
+  /* Sponsors section */
   .sponsors-info{
     max-width: 540px;
     margin: 50px auto;
@@ -144,7 +190,10 @@ main{
     grid-template-columns: repeat(5, 1fr);
     filter: grayscale(100%);
   }
-  
+  /* footer */
+
+ 
+
   /* responsive media query */
   @media  screen  and ( max-width: 576px) {
 
@@ -156,6 +205,7 @@ main{
     }
     .features-img-container,
      .facts-container,
+     .love-features,
      .sponsor-companies
      {
       grid-template-columns: repeat(1, 1fr);
@@ -168,14 +218,19 @@ main{
       justify-items: center;
       gap: 24px;
     }
-    /* Sponsors section */
-
+    
+    #experience-badge{
+      margin-top: 20px;
+      margin-left: 0px;
+    }
     
   }
   /* Medium size device */
 
   @media screen and (min-width: 576px) and (max-width: 992px) {
-    .features-content{
+    .features-content,
+      .love-features
+    {
       flex-direction: column;
      margin-left: 20px;
     }
@@ -185,5 +240,11 @@ main{
     .sponsor-companies, .facts-container{
       grid-template-columns: repeat(2,1fr);
       justify-items: center;
+      gap: 10px;
     }
+    #experience-badge{
+      margin-top: 20px;
+      margin-left: 0px;
+    }
+    
   }
